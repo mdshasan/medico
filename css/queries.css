@@ -1,0 +1,137 @@
+@media (min-width: 991px) and (max-width: 1400px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    height: 4rem;
+    padding-top: 1rem;
+  }
+
+  .department-container .department-box {
+    width: 31.333%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  header .fixed-width .top-header span:nth-child(2) {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+  }
+  .department-container .department-box {
+    width: 47%;
+  }
+  .department-container .department-box .hexagon-shape {
+    top: -60%;
+    left: 39%;
+  }
+  .department-container {
+    margin-bottom: 4rem;
+  }
+  .gallery-container .gallery-box {
+    width: 29.33%;
+  }
+}
+@media (max-width: 768px) {
+  header .fixed-width {
+    display: none;
+  }
+  header .hero-slider .slider-content h2 {
+    margin-top: 15.5rem;
+  }
+  .department-container .department-box .hexagon-shape {
+    top: -16rem;
+    left: 12rem;
+  }
+
+  header .hero-slider .slider-content p {
+    width: 90%;
+
+    font-size: 1rem;
+  }
+  .department-container {
+    margin-bottom: 4rem;
+  }
+
+  .about-right img {
+    height: 100%;
+  }
+
+  .gallery > p {
+    width: 70%;
+  }
+
+  .gallery-filter {
+    width: 90%;
+  }
+
+  .gallery-container .gallery-box {
+    width: 46%;
+  }
+
+  .gallery-box .gallery-overlay .gallery-inner {
+    height: 30%;
+  }
+
+  .testimonials .container p {
+    font-size: 1.2rem;
+  }
+
+  .blog .container-fluid > p {
+    width: 85%;
+  }
+
+  .subscribe-container .subs-icon {
+    text-align: center;
+  }
+
+  .doctors > p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header .hero-slider .slider-content button.contact-us-btn {
+    visibility: hidden;
+  }
+  .department-container .department-box .hexagon-shape {
+    top: -260px;
+    left: 35%;
+  }
+  .department-container .department-box .hexagon-shape img {
+    height: 34px;
+  }
+  .departments > p {
+    width: 72%;
+    line-height: 1.15;
+    font-size: 0.9rem;
+  }
+
+  .count-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .counter-content span {
+    text-align: center;
+  }
+  .gallery-container .gallery-box {
+    width: 100%;
+  }
+  .gallery-box .gallery-overlay .gallery-inner {
+    height: 26%;
+  }
+
+  .blog-container .blog-box {
+    width: 90%;
+    margin: 0 auto 2rem;
+
+    -webkit-transition: 0.3s ease-in-out;
+
+    -o-transition: 0.3s ease-in-out;
+
+    transition: 0.3s ease-in-out;
+  }
+}

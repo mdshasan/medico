@@ -1,0 +1,18 @@
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: hind;
+  src: url(../fonts/hind/Hind-Regular.ttf);
+}
