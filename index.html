@@ -259,7 +259,7 @@
                             <img src="img/counter-icon1.png" alt="">
                         </div>
                         <div class="counter-content">
-                            <span>184
+                            <span class="counters-up">184
                             </span>
                             <span>Experienced Doctors
                             </span>
@@ -271,7 +271,7 @@
                             <img src="img/counter-icon2.png" alt="">
                         </div>
                         <div class="counter-content">
-                            <span>4781
+                            <span class="counters-up">4781
                             </span>
                             <span>Satisfied Patients
 
@@ -283,10 +283,10 @@
                             <img src="img/counter-icon3.png" alt="">
                         </div>
                         <div class="counter-content">
-                            <span>849
+                            <span class="counters-up">849
 
                             </span>
-                            <span>Regular Donors
+                            <span >Regular Donors
 
                             </span>
                         </div>
@@ -296,7 +296,7 @@
                             <img src="img/counter-icon4.png" alt="">
                         </div>
                         <div class="counter-content">
-                            <span>1500
+                            <span class="counters-up">1500
 
                             </span>
                             <span>Successful Surgeries
@@ -369,16 +369,16 @@
         <div class="container">
             <div class="gallery-filter text-capitalize mx-auto my-5">
                 <ul class="mb-0 ps-0">
-                    <li><a href="#">all</a></li>
-                    <li>/<a href="#">departments</a></li>
-                    <li>/<a href="#">events</a></li>
-                    <li>/<a href="#">heart day</a></li>
-                    <li>/<a href="#">others</a></li>
+                    <li><a href="#gallery" data-filter="*">all</a></li>
+                    <li>/<a href="#gallery" data-filter=".departments">departments</a></li>
+                    <li>/<a href="#gallery"data-filter=".events">events</a></li>
+                    <li>/<a href="#gallery" data-filter=".heart-day">heart day</a></li>
+                    <li>/<a href="#gallery" data-filter=".others">others</a></li>
                 </ul>
             </div>
 
-            <div class="gallery-container row justify-content-between">
-                <div class="gallery-box col-xs-12 col-sm-6 col-md-4">
+            <div class="gallery-container row justify-content-center">
+                <div class="gallery-box mix events heart-day departments col-xs-12 col-sm-6 col-md-4">
                     <img src="img/g-1.jpg" alt="gallery">
                     <div class="gallery-overlay d-flex text-start justify-content-start align-items-end">
                         <div class="gallery-inner">
@@ -388,7 +388,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-box col-xs-12 col-sm-6 col-md-4">
+                <div class="gallery-box mix events others col-xs-12 col-sm-6 col-md-4">
                     <img src="img/g-2.jpg" alt="gallery">
                     <div class="gallery-overlay d-flex text-start justify-content-start align-items-end">
                         <div class="gallery-inner ">
@@ -398,7 +398,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-box col-xs-12 col-sm-6 col-md-4">
+                <div class="gallery-box mix heart-day others col-xs-12 col-sm-6 col-md-4">
                     <img src="img/g-3.jpg" alt="gallery">
                     <div class="gallery-overlay d-flex text-start justify-content-start align-items-end">
                         <div class="gallery-inner ">
@@ -408,7 +408,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-box col-xs-12 col-sm-6 col-md-4">
+                <div class="gallery-box mix departments heart-day others col-xs-12 col-sm-6 col-md-4">
                     <img src="img/g-4.jpg" alt="gallery">
                     <div class="gallery-overlay d-flex text-start justify-content-start align-items-end">
                         <div class="gallery-inner ">
@@ -418,7 +418,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-box col-xs-12 col-sm-6 col-md-4">
+                <div class="gallery-box mix departments col-xs-12 col-sm-6 col-md-4">
                     <img src="img/g-5.jpg" alt="gallery">
                     <div class="gallery-overlay d-flex text-start justify-content-start align-items-end">
                         <div class="gallery-inner ">
@@ -428,7 +428,7 @@
                     </div>
                 </div>
 
-                <div class="gallery-box col-xs-12 col-sm-6 col-md-4">
+                <div class="gallery-box mix heart-day col-xs-12 col-sm-6 col-md-4">
                     <img src="img/g-6.jpg" alt="gallery">
                     <div class="gallery-overlay d-flex text-start justify-content-start align-items-end">
                         <div class="gallery-inner ">
@@ -598,8 +598,35 @@
 
     <!--  jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+    <!-- mixitup js -->
+    <script src="js/mixitup.min.js"></script>
+    <!-- counter up js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    
+
+     <!-- waypoints js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js" integrity="sha512-f/gxy4xAjuGEIf/ujexcNI906CTS+kfw40QCyG/rEMKELvCIFaTOY+dfdn7M/eNsiMreG3SStjgFr9q8Me9Baw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+   
+
+        
+    <script>
+        $(document).ready(function(){
+
+            var mixer= mixitup(".gallery-container");
+      
+
+     
+            $('.counters-up').counterUp({
+                delay: 10,
+                time: 4000
+            });
+        });
+
+    </script>
 </body>
 </html>
