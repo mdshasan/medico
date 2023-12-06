@@ -25,6 +25,15 @@ img {
 ul {
   list-style: none;
 }
+
+.sticky{
+  
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    transition: all .3s ease;
+  }
+
 header {
   width: 100%;
   max-width: 100%;
@@ -70,10 +79,11 @@ header .fixed-width .top-header ul ul li:hover {
 header .fixed-width .top-header ul:hover ul {
   display: block;
 }
-header nav {
+header nav .container-fluid {
+  
   background-color: #3660cc;
 }
-header nav .container .navbar-brand {
+header nav .container-fluid .navbar-brand {
   color: #fff;
 }
 header nav .container ul li a {
@@ -98,12 +108,16 @@ header .navbar-light .navbar-nav .show > .nav-link {
 header .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  min-height: 4rem;
+  /* min-height: 4rem; */
 }
 header .navbar-light .navbar-nav .nav-link:focus,
 header .navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff;
   background-color: #3c4d6d;
+  padding-left: 0.5rem;
+    color: #ffffff;
+    transition: all .5s ease;
+    background-color: #3c4d6d;
 }
 header #bootstrap-override .bg-light {
   background-color: #3660cc;
@@ -112,7 +126,7 @@ header .navbar-light .navbar-toggler {
   color: transparent;
 }
 header .social-icons a {
-  background-image: url(img/img-sprite.jpg);
+  background-image: url(../img/img-sprite.jpg);
   display: inline-block;
   width: 26px;
   height: 26px;
@@ -464,9 +478,9 @@ header .hero-slider .slider-content button:hover {
   bottom: 0;
 }
 .count-up {
-  background: -o-linear-gradient(#3660cc9c, #3660ccc4), url(img/parallax.jpg);
-  background: -webkit-gradient(linear, left top, left bottom, from(#3660cc9c), to(#3660ccc4)), url(img/parallax.jpg);
-  background: linear-gradient(#3660cc9c, #3660ccc4), url(img/parallax.jpg);
+  background: -o-linear-gradient(#3660cc9c, #3660ccc4), url(../img/parallax.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3660cc9c), to(#3660ccc4)), url(../img/parallax.jpg);
+  background: linear-gradient(#3660cc9c, #3660ccc4), url(../img/parallax.jpg);
   background-position: right top;
   background-size: 1288px 911px;
   background-attachment: fixed;
@@ -639,9 +653,9 @@ header .hero-slider .slider-content button:hover {
   padding: 7rem 0;
   background: -o-linear-gradient(#3660ccd9, #3660cc),
     url(img/testimonidal-bg.jpg);
-  background: -webkit-gradient(linear, left top, left bottom, from(#3660ccd9), to(#3660cc)), url(img/testimonidal-bg.jpg);
-  background: -o-linear-gradient(#3660ccd9, #3660cc), url(img/testimonidal-bg.jpg);
-  background: linear-gradient(#3660ccd9, #3660cc), url(img/testimonidal-bg.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3660ccd9), to(#3660cc)), url(../img/testimonidal-bg.jpg);
+  background: -o-linear-gradient(#3660ccd9, #3660cc), url(../img/testimonidal-bg.jpg);
+  background: linear-gradient(#3660ccd9, #3660cc), url(../img/testimonidal-bg.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
