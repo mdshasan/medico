@@ -10,6 +10,8 @@
 }
 
 @media (min-width: 767px) and (max-width: 990px) {
+
+  
   header .fixed-width .top-header span:nth-child(2) {
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
@@ -29,6 +31,12 @@
   }
 }
 @media (max-width: 768px) {
+
+  .navbar .container-fluid{
+    z-index: 100;
+    top: 0;
+    position: fixed;
+  }
   header .fixed-width {
     display: none;
   }
@@ -87,6 +95,9 @@
 }
 
 @media (max-width: 480px) {
+
+  
+
   header .hero-slider .slider-content button.contact-us-btn {
     visibility: hidden;
   }
